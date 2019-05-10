@@ -1,0 +1,13 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.info p {
+    margin: auto 0;
+}
+.info:last-child{
+    background: #fafafa;
+    padding: 10px 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <!--if a /admin/module/frontcart/ route is provided, a "Configuration" button will be displayed
+     for the module in the module list. Clicking this button will invoke this route.-->
+
+    <route id="FrontCart.get.cart" path="/front-api/cart" methods="get">
+        <default key="_controller">FrontCart\Controller\CartController::getCart</default>
+    </route>
+
+    <route id="FrontCart.add" path="/front-api/cart/add" methods="post">
+        <default key="_controller">FrontCart\Controller\CartController::addItem</default>
+    </route>
+
+    <route id="FrontCart.update" path="/front-api/cart/update">
+        <default key="_controller">FrontCart\Controller\CartController::updateItem</default>
+    </route>
+
+    <route id="FrontCart.delete" path="/front-api/cart/delete/{cart_item}">
+        <default key="_controller">FrontCart\Controller\CartController::deleteItem</default>
+    </route>
+
+    <route id="FrontCart.clear.cart" path="/front-api/cart/clear">
+        <default key="_controller">FrontCart\Controller\CartController::clearCart</default>
+    </route>
+
+    <route id="order.coupon.process" path="/front-api/order/coupon" methods="post">
+        <default key="_controller">FrontCart\Controller\CouponController::consumeAction</default>
+    </route>
+
+</routes>

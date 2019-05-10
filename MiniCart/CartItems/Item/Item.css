@@ -1,0 +1,51 @@
+.item{
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item:after {
+    content: '';
+    width: 55%;
+    height: 1px;
+    display: block;
+    margin: auto;
+    background: #efefef;
+    margin-top: 50px;
+  }
+  .item .minicartImg{
+      width: 15%;   
+  }
+.item a{
+    color:black;
+    text-decoration: none;
+}
+.item svg{
+    width:10px;
+    height:10px;
+}
+
+.quantity{
+     width:20%;
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+  }
+
+  button{
+      background: none;
+      border:none;
+  }
+.item .attributes{
+    padding: 0;
+    width: 20%;
+
+}
+
+
+
+
+
+

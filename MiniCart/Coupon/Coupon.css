@@ -1,0 +1,18 @@
+.privilegeCode{
+  padding: 15px;
+}
+.couponForm{
+  display: flex;
+  flex-direction: column;
+}
+.couponForm button{
+    width: 50%;
+    align-self: flex-end;
+}
+
+.resultCoupon .loading-spinner{
+  position: absolute;
+  margin: -80px;
+}
+
+
